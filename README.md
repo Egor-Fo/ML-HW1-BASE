@@ -28,4 +28,4 @@ Ridge
 - Не удалось использовать "torque" 
 
 Дополнительные файлы - 
-[text](<../Documents/API HW1.postman_collection.json>) - запросы и сервисы
+API_HW1.postman_collection.json - запросы к сервису
