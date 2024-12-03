@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "2d0fc646-24ef-4444-8630-dd6ef20e6d9b",
+		"name": "API HW1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "predict_items",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Егор/Documents/cars_test.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/predict_items",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"predict_items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "predict_item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Mahindra Xylo E4 BS IV\",\r\n  \"year\": 2010,\r\n  \"selling_price\": 229999,\r\n  \"km_driven\": 168000,\r\n  \"fuel\": \"Diesel\",\r\n  \"seller_type\": \"Individual\",\r\n  \"transmission\": \"Manual\",\r\n  \"owner\": \"First Owner\",\r\n  \"mileage\": \"14.0 kmpl\",\r\n  \"engine\": \"2498 CC\",\r\n  \"max_power\": \"112 bhp\",\r\n  \"torque\": \"260 Nm at 1800-2200 rpm\",\r\n  \"seats\": 7\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/predict_item",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"predict_item"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
